@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Layout tastiera e accenti su maiuscole</title>
+  <link rel="stylesheet" href="stile.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #3a7bd5, #3f51b5);
+      color: white;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .guida-container {
+      padding: 20px;
+      /* spazio interno tutto intorno */
+      margin-top: 40px;
+      /* distanza sopra */
+      margin-left: 30px;
+      /* per centrare orizzontalmente se width fissata */
+      margin-right: 30px;
+      max-width: 800px;
+      /* o quanto vuoi */
+    }
+
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 50px;
+      color: #fff;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    .problema-box {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 25px 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .problema-titolo {
+      font-size: 1.3rem;
+      color: #fff;
+      margin: 0;
+      flex-grow: 1;
+    }
+
+    .btn-soluzione {
+      padding: 10px 20px;
+      background-color: #ffffffcc;
+      color: #3a3a3a;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background-color 0.3s ease, transform 0.2s;
+      margin-left: 20px;
+      white-space: nowrap;
+    }
+
+    .btn-soluzione:hover {
+      background-color: #fff;
+      transform: scale(1.05);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 22px;
+      background-color: #ffffffcc;
+      color: #3a3a3a;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    .back-link:hover {
+      background-color: #fff;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="guida-container">
+    <h1>⌨️ Layout tastiera e accenti su maiuscole</h1>
+
+    <p>
+      Se gli accenti sulle lettere maiuscole non funzionano correttamente, o alcune scorciatoie da tastiera non
+      rispondono come previsto, potrebbe essere dovuto a un'impostazione errata del layout della tastiera.
+    </p>
+
+
+    <img src="img/layoutTastiera.jpg" alt="Impostazioni layout tastiera macOS" class="guida-img" />
+
+    <ol>
+      <li>Apri <strong>Impostazioni</strong> (premi <kbd>Win + I</kbd>).</li>
+      <li>Vai su <strong>Ora e lingua</strong> &gt; <strong>Lingua</strong>.</li>
+      <li>Seleziona <strong>Italiano</strong> e clicca su <em>Opzioni</em>.</li>
+      <li>Controlla che la tastiera sia impostata su <strong>Italiano (QWERTY)</strong> o <strong>Italiano</strong>.
+      </li>
+      <li>Se vedi un layout diverso, aggiungi la tastiera italiana e rimuovi le altre.</li>
+    </ol>
+            <section>
+  <p>Ecco qua una guida anche di come fare le lettere con l'accento maiuscole:</p>
+
+  <h3>🪟 Su Windows (tastiera italiana)</h3>
+  <p>Utilizza il tasto <kbd>Alt</kbd> + codice numerico dal tastierino numerico (NumPad):</p>
+  <ul>
+    <li><kbd>Alt</kbd> + <kbd>0192</kbd> = À</li>
+    <li><kbd>Alt</kbd> + <kbd>0200</kbd> = È</li>
+    <li><kbd>Alt</kbd> + <kbd>0204</kbd> = Ì</li>
+    <li><kbd>Alt</kbd> + <kbd>0210</kbd> = Ò</li>
+    <li><kbd>Alt</kbd> + <kbd>0217</kbd> = Ù</li>
+  </ul>
+
+    <a href="tastiera-appunti.html" class="back-link">⬅️ Torna all'elenco</a>
+  </div>
+</body>
+
+</html>

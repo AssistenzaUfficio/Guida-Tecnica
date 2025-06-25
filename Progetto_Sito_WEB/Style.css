@@ -1,0 +1,23 @@
+/* Per tutta la pagina */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Oppure solo per la sezione soluzione */
+.soluzione {
+    font-family: Arial, sans-serif;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 0;
+    padding: 12px 22px;
+    background-color: #ffffffcc;
+    color: #3a3a3a;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
